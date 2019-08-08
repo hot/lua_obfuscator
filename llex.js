@@ -388,7 +388,7 @@ class LLEX
                 default:{
                     if(Utils.isspace(this.current)){
                         assert(!Utils.currIsNewline(this.current));
-                        next(ls);
+                        this.next();
                         continue;
                     }
                     else if(Utils.isdigit(this.current)){
